@@ -3,15 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portfolio Web Site for Reese Hudson"
-    />
+    <meta name="description" content="Portfolio Web Site for Reese Hudson" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Reese Hudson</title>
   </head>
   <body>
     <div id="root"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyANu-heKK0Xez1pfpdrXACZArXBy1HRMys",
+        authDomain: "portfolio-hudson.firebaseapp.com",
+        projectId: "portfolio-hudson",
+        storageBucket: "portfolio-hudson.appspot.com",
+        messagingSenderId: "940063555912",
+        appId: "1:940063555912:web:9757972a15ca8f2703f37d",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
