@@ -59,8 +59,8 @@ function ProjectExt() {
                     data-bs-toggle="tooltip" data-bs-placement="bottom" title={item} /></a>
             }
             else if (item === "Currently Refactoring to ReactJS") {
-                icon = <a rel='noreferrer' target='_blank' href='https://www.heroku.com/'><FontAwesomeIcon className='fa-2x' style={{ color: "#FFC60A" }} icon={faExclamationTriangle}
-                data-bs-toggle="tooltip" data-bs-placement="bottom" title={item}/></a>
+                icon =<FontAwesomeIcon className='fa-2x' style={{ color: "#FFC60A" }} icon={faExclamationTriangle}
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title={item}/>
             }
 
             return (

@@ -3,7 +3,7 @@ const projectData = [
         "title": "clubHubFC",
         "description": "Capstone Project: Youth Sports League Management App utilizing the complete stack of tools learned throughout bootcamp.",
         "github": "https://github.com/dreesehudson/aotc_react",
-        "demo": "",
+        "demo": "https://clubhubfc.web.app",
         "techs": ['React','JavaScript','Bootstrap', 'CSS', 'HTML', 'PHP', 'Laravel', 'MySQL', 'Git', 'Firebase', 'Heroku' ]
     },
     {
@@ -36,7 +36,7 @@ const projectData = [
     },
     {
         "title": "ticTacToeGame",
-        "description": "Responsive Tic-Tac-Toe game, emphasizes event.target to manipulate state, Currently Refactoring to ReactJSed using React.",
+        "description": "Responsive Tic-Tac-Toe game, emphasizes event.target to manipulate state.",
         "github": "https://github.com/dreesehudson/tic-tac-toe",
         "demo": "https://dreesehudson.github.io/tic-tac-toe/",
         "techs": ['JavaScript','Bootstrap', 'CSS', 'HTML', 'Git', 'GitHub', 'Currently Refactoring to ReactJS']
