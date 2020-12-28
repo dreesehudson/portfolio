@@ -21,7 +21,7 @@ function Clock() {
 
     return (
         <>
-            <FontAwesomeIcon icon={faClock}/>
+            <FontAwesomeIcon className='fa-lg' icon={faClock}/>
             <p className="m-2 text-white"><b>{date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</b></p>
             <p className="m-2 text-white"><b>{date.toLocaleDateString()}</b></p>
         </>
