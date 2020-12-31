@@ -7,6 +7,13 @@ const projectData = [
         "techs": ['React','JavaScript','Bootstrap', 'CSS', 'HTML', 'PHP', 'Laravel', 'MySQL', 'Git', 'Firebase', 'Heroku' ]
     },
     {
+        "title": "riskLegacyPlayerAid",
+        "description": "Post-Bootcamp Group Project. Removes administrative and bookkeeping elements of the board game to streamline play sessions.",
+        "github": "https://github.com/dreesehudson/risk-player-aid",
+        "demo": "",
+        "techs": ['React','Bootstrap', 'Git', 'Firebase', 'Group Project' ]
+    },
+    {
         "title": "reactRestaurant",
         "description": "Mock Restaurant Menu using ReactJS and a Menu API",
         "github": "https://github.com/dreesehudson/react-restaurant",
@@ -56,11 +63,18 @@ const projectData = [
         "techs": ['Bootstrap', 'CSS', 'HTML', 'Git', 'GitHub']
     },
     {
+        "title": "mindReaderGame - React",
+        "description": "Interactive mind reading game, refactored using React JS",
+        "github": "https://github.com/dreesehudson/mind-reader-react",
+        "demo": "https://mind-reader-react.web.app",
+        "techs": ['React','Bootstrap', 'Git','Firebase']
+    },
+    {
         "title": "mindReaderGame",
         "description": "Interactive mind reading game",
         "github": "https://github.com/dreesehudson/mind-reader",
         "demo": "https://dreesehudson.github.io/mind-reader/",
-        "techs": [/*'React',*/ 'JavaScript','Bootstrap', 'CSS', 'HTML', 'Git','GitHub', 'Currently Refactoring to ReactJS']
+        "techs": ['JavaScript','Bootstrap', 'CSS', 'HTML', 'Git','GitHub']
     },
     {
         "title": "bouncingBalls",

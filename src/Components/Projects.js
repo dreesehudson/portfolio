@@ -3,7 +3,7 @@ import { Card, CardText, CardBody, CardTitle, Button, Row, Container, Col } from
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faGitAlt, faKaggle } from '@fortawesome/free-brands-svg-icons'
 import { faReact, faJsSquare, faBootstrap, faHtml5, faCss3Alt, faPhp, faLaravel } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase, faExclamationTriangle, faFireAlt } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, faExclamationTriangle, faFireAlt, faUserFriends } from '@fortawesome/free-solid-svg-icons'
 import projectData from '../projectData';
 
 function ProjectExt() {
@@ -58,9 +58,13 @@ function ProjectExt() {
                 icon = <a rel='noreferrer' target='_blank' href='https://www.heroku.com/'><FontAwesomeIcon className='fa-2x' style={{ color: "#6D3EA3" }} icon={faKaggle}
                     data-bs-toggle="tooltip" data-bs-placement="bottom" title={item} /></a>
             }
+            else if (item === "Group Project") {
+                icon = <FontAwesomeIcon className='fa-2x' style={{ color: "#1D3461" }} icon={faUserFriends}
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" title={item} />
+            }
             else if (item === "Currently Refactoring to ReactJS") {
-                icon =<FontAwesomeIcon className='fa-2x' style={{ color: "#FFC60A" }} icon={faExclamationTriangle}
-                data-bs-toggle="tooltip" data-bs-placement="bottom" title={item}/>
+                icon = <FontAwesomeIcon className='fa-2x' style={{ color: "#FFC60A" }} icon={faExclamationTriangle}
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" title={item} />
             }
 
             return (
@@ -85,7 +89,12 @@ function ProjectExt() {
                                         <CardText tag='h4' className='my-3'>{project.description}</CardText>
                                         <CardText className='my-3'>{tech(project.techs)}</CardText>
                                         <Row>
-                                            <Button href={project.demo} target="_blank" className='mx-3'>Demo</Button>
+                                            {
+                                                project.demo ?
+                                                    <Button href={project.demo} target="_blank" className='mx-3'>Demo</Button>
+                                                    :
+                                                    <Button className='mx-3 disabled'>Demo</Button>
+                                            }
                                             <Button href={project.github} target="_blank" className='mx-2'>Github</Button>
                                         </Row>
                                     </CardBody>
