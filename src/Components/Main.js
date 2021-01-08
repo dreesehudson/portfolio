@@ -11,7 +11,7 @@ import {
 
 function Main() {
     return (
-        <Container>
+        <div className="container-fluid">
             <Router>
                 <Switch>
                     <Route path='/blog'>
@@ -22,7 +22,7 @@ function Main() {
                     </Route>
                 </Switch>
             </Router>
-        </Container>
+        </div>
     )
 }
 
